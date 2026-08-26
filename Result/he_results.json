@@ -1,0 +1,20 @@
+{
+  "chunk_1000": {
+    "size": 1000,
+    "enc_seconds": 0.007,
+    "dec_seconds": 0.0018,
+    "max_error": 6.777452904449532e-09
+  },
+  "chunk_5000": {
+    "size": 5000,
+    "enc_seconds": 0.0141,
+    "dec_seconds": 0.0034,
+    "max_error": 7.797817044852273e-09
+  },
+  "chunk_11970": {
+    "size": 11970,
+    "enc_seconds": 0.0211,
+    "dec_seconds": 0.0055,
+    "max_error": 7.9220442601724e-09
+  }
+}

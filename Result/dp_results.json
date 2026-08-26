@@ -1,0 +1,37 @@
+[
+  {
+    "target_epsilon": 0.5,
+    "actual_epsilon": 0.4945368317545344,
+    "auc_roc": 0.8761627934645048,
+    "delta": 1e-05,
+    "epochs": 15
+  },
+  {
+    "target_epsilon": 1.0,
+    "actual_epsilon": 0.9977493092488442,
+    "auc_roc": 0.8340536807767365,
+    "delta": 1e-05,
+    "epochs": 15
+  },
+  {
+    "target_epsilon": 2.0,
+    "actual_epsilon": 1.994332632171659,
+    "auc_roc": 0.8340232572176587,
+    "delta": 1e-05,
+    "epochs": 15
+  },
+  {
+    "target_epsilon": 5.0,
+    "actual_epsilon": 4.994336955917628,
+    "auc_roc": 0.812460800147337,
+    "delta": 1e-05,
+    "epochs": 15
+  },
+  {
+    "target_epsilon": 10.0,
+    "actual_epsilon": 9.996232274579922,
+    "auc_roc": 0.8215222062832711,
+    "delta": 1e-05,
+    "epochs": 15
+  }
+]

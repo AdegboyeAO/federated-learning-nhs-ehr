@@ -1,0 +1,7 @@
+{
+  "attack_auc": 0.398272598511587,
+  "advantage": 0.20345480297682605,
+  "risk_level": "LOW \u2014 acceptable for NHS deployment",
+  "n_members": 3613,
+  "n_nonmembers": 3613
+}
