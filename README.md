@@ -47,26 +47,27 @@ federated-learning-nhs-ehr/
 ├── notebooks/
 │   ├── 01_Preprocessing_Pipeline.ipynb    ← Data cleaning, feature engineering,
 │   │                                          leakage detection, Dirichlet partitioning
-│   └── 02_FL_Simulation.ipynb             ← FL simulation (4 algorithms × 3 conditions),
-│                                              DP, MIA, HE evaluation
-│
-├── results/
-│   ├── fedavg_iid.json                    ← Round-by-round training loss (50 rounds)
-│   ├── fedprox_iid.json
-│   ├── scaffold_iid.json
-│   ├── perfedavg_iid.json
-│   ├── fedavg_mod_noniid.json
-│   ├── fedprox_mod_noniid.json
-│   ├── scaffold_mod_noniid.json
-│   ├── perfedavg_mod_noniid.json
-│   ├── fedavg_ext_noniid.json
-│   ├── fedprox_ext_noniid.json
-│   ├── scaffold_ext_noniid.json
-│   ├── perfedavg_ext_noniid.json
-│   ├── dp_results.json                    ← DP evaluation (5 epsilon values)
-│   ├── he_results.json                    ← HE timing results
-│   ├── mia_results.json                   ← Membership inference attack results
-│   └── test_evaluation.json               ← Corrected baseline model metrics
+│   ├── 02_FL_Simulation.ipynb             ← FL simulation (4 algorithms × 3 conditions),
+│   │                                          
+│   ├── 03_Privacy_Evaluation.ipynb        ← leakage detection, Dirichlet partitioning,
+│   │                                              DP, MIA, HE evaluation
+│   ├── 04_Results_Analysis
+│           ├── fedavg_iid.json                    ← Round-by-round training loss (50 rounds)
+│           ├── fedprox_iid.json
+│           ├── scaffold_iid.json
+│           ├── perfedavg_iid.json
+│           ├── fedavg_mod_noniid.json
+│           ├── fedprox_mod_noniid.json
+│           ├── scaffold_mod_noniid.json
+│           ├── perfedavg_mod_noniid.json
+│           ├── fedavg_ext_noniid.json
+│           ├── fedprox_ext_noniid.json
+│           ├── scaffold_ext_noniid.json
+│           ├── perfedavg_ext_noniid.json
+│           ├── dp_results.json                    ← DP evaluation (5 epsilon values)
+│           ├── he_results.json                    ← HE timing results
+│           ├── mia_results.json                   ← Membership inference attack results
+│           └── test_evaluation.json               ← Corrected baseline model metrics
 │
 ├── requirements.txt                       ← All Python dependencies with versions
 ├── .gitignore                             ← Excludes MIMIC-IV data (cannot be shared)
@@ -78,7 +79,7 @@ federated-learning-nhs-ehr/
 
 ## Dataset — MIMIC-IV v3.1
 
-> ⚠️ **The MIMIC-IV dataset is NOT included in this repository.** It contains de-identified patient records and requires a credentialled data use agreement.
+>  **The MIMIC-IV dataset is NOT included in this repository.** It contains de-identified patient records and requires a credentialled data use agreement.
 
 **To access MIMIC-IV:**
 1. Create an account at [PhysioNet](https://physionet.org/)
