@@ -1,0 +1,30 @@
+# ─── Federated Learning ───────────────────────────────────────────────────────
+flwr[simulation]==1.5.0          # Flower FL framework
+ray==2.6.3                       # Required by Flower simulation mode
+
+# ─── Privacy Mechanisms ──────────────────────────────────────────────────────
+opacus==1.4.0                    # Differential privacy for PyTorch (DP-SGD)
+tenseal==0.3.14                  # Homomorphic encryption (CKKS scheme)
+
+# ─── Deep Learning ───────────────────────────────────────────────────────────
+torch>=2.0.0                     # PyTorch
+torchvision>=0.15.0
+
+# ─── Data Science ────────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0              # Preprocessing, metrics, MIA evaluation
+scipy>=1.11.0
+
+# ─── Visualisation ───────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ─── Utilities ───────────────────────────────────────────────────────────────
+tqdm>=4.65.0
+psutil>=5.9.0
+
+# ─── IMPORTANT: Version pin required for Flower 1.5.0 compatibility ──────────
+# grpcio-status 1.71.2 conflicts with protobuf 6.x
+# Pin protobuf to resolve the conflict:
+protobuf==3.20.3

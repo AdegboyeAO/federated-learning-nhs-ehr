@@ -1,0 +1,51 @@
+# ── MIMIC-IV Data (CANNOT be shared — requires PhysioNet DUA) ─────────────────
+data/
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.db
+
+# ── Trained model weights ─────────────────────────────────────────────────────
+*.pth
+*.pt
+*.pkl
+*.pickle
+models/
+checkpoints/
+
+# ── Google Drive mounts ───────────────────────────────────────────────────────
+content/
+drive/
+MyDrive/
+
+# ── Numpy arrays (preprocessed data — large, and contains patient data) ───────
+*.npy
+*.npz
+
+# ── FL partitions (derived from patient data) ─────────────────────────────────
+fl_partitions/
+ARTEFACTS/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+.env
+venv/
+.venv/
+*.egg-info/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_metadata
+
+# ── macOS / Windows ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
