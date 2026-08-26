@@ -19,7 +19,7 @@ This repository contains the complete simulation code, preprocessing pipeline, a
 
 The dissertation investigates whether federated learning (FL) can enable NHS Trusts to collaboratively train clinical prediction models without patient data ever leaving Trust boundaries. Four FL algorithms — FedAvg, FedProx, SCAFFOLD, and Per-FedAvg — are compared across three data heterogeneity conditions simulating NHS Trust diversity. Three privacy mechanisms — Differential Privacy, Secure Aggregation, and Homomorphic Encryption — are evaluated.
 
-**Supervisor:** Dr Pradeep Hewage, University of Greater Manchester
+**Supervisor:** Dr Anchal Garg, University of Greater Manchester
 
 ---
 
@@ -145,10 +145,10 @@ Open notebooks/01_Preprocessing_Pipeline.ipynb in Google Colab
 
 ---
 
-### Notebook 02 — FL Simulation
+### Notebook 02 — FL_Simulation_Corrected
 
 ```
-Open notebooks/02_FL_Simulation.ipynb in Google Colab
+Open notebooks/02_FL_Simulation_Corrected.ipynb in Google Colab
 ```
 
 **What it does:**
@@ -158,18 +158,24 @@ Open notebooks/02_FL_Simulation.ipynb in Google Colab
 - 10 simulated NHS Trust nodes, 50 communication rounds each
 - Records round-by-round training loss → saved to `/results/`
 
-**Stage 2: Differential Privacy Evaluation**
+### Notebook 03 — Privacy_Evaluation
+**What it does:**
+
+**Stage 1: Differential Privacy Evaluation**
 - Applies DP-SGD (Opacus) across 5 epsilon values: 0.5, 1.0, 2.0, 5.0, 10.0
 - δ = 1×10⁻⁵, 15 training epochs per configuration
 - Evaluates AUC-ROC on corrected test set
 
-**Stage 3: Membership Inference Attack**
+**Stage 2: Membership Inference Attack**
 - Shadow model attack (Shokri et al., 2017 methodology)
 - n = 3,613 members + 3,613 non-members
 
-**Stage 4: Homomorphic Encryption**
+**Stage 3: Homomorphic Encryption**
 - CKKS scheme (TenSEAL) at 3 model sizes: 1,000 / 5,000 / 11,970 parameters
 - Records encryption/decryption time and numerical error
+
+### Notebook 04 — Results_Analysis
+**What it does:**
 
 **Output:** All results saved as JSON files in `/results/`
 
@@ -259,7 +265,7 @@ https://github.com/[your-username]/federated-learning-nhs-ehr
   year      = {2026},
   publisher = {GitHub},
   note      = {MRes Dissertation, University of Greater Manchester, MRES7015},
-  url       = {https://github.com/[your-username]/federated-learning-nhs-ehr}
+  url       = {https://github.com/AdegboyeAO/federated-learning-nhs-ehr}
 }
 ```
 
