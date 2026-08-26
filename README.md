@@ -1,4 +1,4 @@
-# Federated Learning for Privacy-Preserving NHS EHR
+# EVALUATION OF FEDERATED LEARNING MODELS FOR PRIVACY-PRESERVING ELECTRONIC HEALTH RECORDS IN THE UK HEALTHCARE SYSTEM
 
 **MRes Computing and Artificial Intelligence — University of Greater Manchester**
 **MRES7015 Research Project · 2026**
